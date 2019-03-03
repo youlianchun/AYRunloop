@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NCRunLoop.xcodeproj">
+      location = "self:/Volumes/YLCHUN_HD/Codes/Github/NCRunloop/AYRunLoop.xcodeproj">
    </FileRef>
 </Workspace>

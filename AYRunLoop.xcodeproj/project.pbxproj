@@ -13,11 +13,11 @@
 		A977AE1A1E52B2B300D7EAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A977AE181E52B2B300D7EAD4 /* Main.storyboard */; };
 		A977AE1C1E52B2B300D7EAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A977AE1B1E52B2B300D7EAD4 /* Assets.xcassets */; };
 		A977AE1F1E52B2B300D7EAD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A977AE1D1E52B2B300D7EAD4 /* LaunchScreen.storyboard */; };
-		A977AE291E52B2CA00D7EAD4 /* NCRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = A977AE281E52B2CA00D7EAD4 /* NCRunloop.m */; };
+		A977AE291E52B2CA00D7EAD4 /* AYRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = A977AE281E52B2CA00D7EAD4 /* AYRunloop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A977AE0C1E52B2B300D7EAD4 /* NCRunLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCRunLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A977AE0C1E52B2B300D7EAD4 /* AYRunLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYRunLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A977AE101E52B2B300D7EAD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A977AE121E52B2B300D7EAD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A977AE131E52B2B300D7EAD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,8 +27,8 @@
 		A977AE1B1E52B2B300D7EAD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A977AE1E1E52B2B300D7EAD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A977AE201E52B2B300D7EAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A977AE271E52B2CA00D7EAD4 /* NCRunloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCRunloop.h; sourceTree = "<group>"; };
-		A977AE281E52B2CA00D7EAD4 /* NCRunloop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCRunloop.m; sourceTree = "<group>"; };
+		A977AE271E52B2CA00D7EAD4 /* AYRunloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYRunloop.h; sourceTree = "<group>"; };
+		A977AE281E52B2CA00D7EAD4 /* AYRunloop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYRunloop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 		A977AE031E52B2B200D7EAD4 = {
 			isa = PBXGroup;
 			children = (
-				A977AE0E1E52B2B300D7EAD4 /* NCRunLoop */,
+				A977AE0E1E52B2B300D7EAD4 /* AYRunLoop */,
 				A977AE0D1E52B2B300D7EAD4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,15 +53,15 @@
 		A977AE0D1E52B2B300D7EAD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A977AE0C1E52B2B300D7EAD4 /* NCRunLoop.app */,
+				A977AE0C1E52B2B300D7EAD4 /* AYRunLoop.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A977AE0E1E52B2B300D7EAD4 /* NCRunLoop */ = {
+		A977AE0E1E52B2B300D7EAD4 /* AYRunLoop */ = {
 			isa = PBXGroup;
 			children = (
-				A977AE261E52B2CA00D7EAD4 /* NCRunloop */,
+				A977AE261E52B2CA00D7EAD4 /* AYRunloop */,
 				A977AE121E52B2B300D7EAD4 /* AppDelegate.h */,
 				A977AE131E52B2B300D7EAD4 /* AppDelegate.m */,
 				A977AE151E52B2B300D7EAD4 /* ViewController.h */,
@@ -72,7 +72,7 @@
 				A977AE201E52B2B300D7EAD4 /* Info.plist */,
 				A977AE0F1E52B2B300D7EAD4 /* Supporting Files */,
 			);
-			path = NCRunLoop;
+			path = AYRunLoop;
 			sourceTree = "<group>";
 		};
 		A977AE0F1E52B2B300D7EAD4 /* Supporting Files */ = {
@@ -83,21 +83,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A977AE261E52B2CA00D7EAD4 /* NCRunloop */ = {
+		A977AE261E52B2CA00D7EAD4 /* AYRunloop */ = {
 			isa = PBXGroup;
 			children = (
-				A977AE271E52B2CA00D7EAD4 /* NCRunloop.h */,
-				A977AE281E52B2CA00D7EAD4 /* NCRunloop.m */,
+				A977AE271E52B2CA00D7EAD4 /* AYRunloop.h */,
+				A977AE281E52B2CA00D7EAD4 /* AYRunloop.m */,
 			);
-			path = NCRunloop;
+			path = AYRunloop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A977AE0B1E52B2B300D7EAD4 /* NCRunLoop */ = {
+		A977AE0B1E52B2B300D7EAD4 /* AYRunLoop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A977AE231E52B2B300D7EAD4 /* Build configuration list for PBXNativeTarget "NCRunLoop" */;
+			buildConfigurationList = A977AE231E52B2B300D7EAD4 /* Build configuration list for PBXNativeTarget "AYRunLoop" */;
 			buildPhases = (
 				A977AE081E52B2B300D7EAD4 /* Sources */,
 				A977AE091E52B2B300D7EAD4 /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = NCRunLoop;
+			name = AYRunLoop;
 			productName = NCRunLoop;
-			productReference = A977AE0C1E52B2B300D7EAD4 /* NCRunLoop.app */;
+			productReference = A977AE0C1E52B2B300D7EAD4 /* AYRunLoop.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A977AE071E52B2B200D7EAD4 /* Build configuration list for PBXProject "NCRunLoop" */;
+			buildConfigurationList = A977AE071E52B2B200D7EAD4 /* Build configuration list for PBXProject "AYRunLoop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A977AE0B1E52B2B300D7EAD4 /* NCRunLoop */,
+				A977AE0B1E52B2B300D7EAD4 /* AYRunLoop */,
 			);
 		};
 /* End PBXProject section */
@@ -165,7 +165,7 @@
 			files = (
 				A977AE171E52B2B300D7EAD4 /* ViewController.m in Sources */,
 				A977AE141E52B2B300D7EAD4 /* AppDelegate.m in Sources */,
-				A977AE291E52B2CA00D7EAD4 /* NCRunloop.m in Sources */,
+				A977AE291E52B2CA00D7EAD4 /* AYRunloop.m in Sources */,
 				A977AE111E52B2B300D7EAD4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,9 +288,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NCRunLoop/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AYRunLoop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ylchun.NCRunLoop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylchun.AYRunLoop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -299,9 +299,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NCRunLoop/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AYRunLoop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ylchun.NCRunLoop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylchun.AYRunLoop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A977AE071E52B2B200D7EAD4 /* Build configuration list for PBXProject "NCRunLoop" */ = {
+		A977AE071E52B2B200D7EAD4 /* Build configuration list for PBXProject "AYRunLoop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A977AE211E52B2B300D7EAD4 /* Debug */,
@@ -318,13 +318,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A977AE231E52B2B300D7EAD4 /* Build configuration list for PBXNativeTarget "NCRunLoop" */ = {
+		A977AE231E52B2B300D7EAD4 /* Build configuration list for PBXNativeTarget "AYRunLoop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A977AE241E52B2B300D7EAD4 /* Debug */,
 				A977AE251E52B2B300D7EAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

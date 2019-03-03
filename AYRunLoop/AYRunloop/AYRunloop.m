@@ -1,24 +1,24 @@
 //
-//  NCRunloop.m
-//  NCRunloop
+//  AYRunloop.m
+//  AYRunloop
 //
 //  Created by YLCHUN on 2017/2/14.
 //  Copyright © 2017年 ylchun. All rights reserved.
 //
 
-#import "NCRunloop.h"
+#import "AYRunloop.h"
 
-@interface NCRunloop ()
+@interface AYRunloop ()
 @property (nonatomic, retain) NSThread *thread;
 @property (nonatomic) CFRunLoopRef runLoop;
 @property (nonatomic, assign) BOOL isCancelled;
 @property (nonatomic, assign) BOOL runing;
 @end
 
-@interface _NCRunloop : NSObject
-@property (nonatomic, weak)NCRunloop *runLoop;
+@interface _AYRunloop : NSObject
+@property (nonatomic, weak)AYRunloop *runLoop;
 @end
-@implementation _NCRunloop
+@implementation _AYRunloop
 @end
 
 static NSMutableDictionary *kRunLoopDict = nil;
@@ -32,10 +32,10 @@ NSMutableDictionary* runLoopDict(){
     return kRunLoopDict;
 }
 
-void weakRunLoop(NCRunloop *runloop, BOOL isWeak) {
+void weakRunLoop(AYRunloop *runloop, BOOL isWeak) {
     NSString *key = [NSString stringWithFormat:@"%p", runloop.runLoop];
     if (isWeak) {
-        _NCRunloop *_runloop = [[_NCRunloop alloc] init];
+        _AYRunloop *_runloop = [[_AYRunloop alloc] init];
         _runloop.runLoop = runloop;
         runLoopDict()[key] = _runloop;
     }else{
@@ -44,18 +44,18 @@ void weakRunLoop(NCRunloop *runloop, BOOL isWeak) {
 }
 
 
-NCRunloop *runLoop() {
+AYRunloop *runLoop() {
     NSString *key = [NSString stringWithFormat:@"%p", CFRunLoopGetCurrent()];
-    _NCRunloop *_runloop = runLoopDict()[key];
-    NCRunloop * runLoop = _runloop.runLoop;
+    _AYRunloop *_runloop = runLoopDict()[key];
+    AYRunloop * runLoop = _runloop.runLoop;
     if (!runLoop) {
-        runLoop = [[NCRunloop alloc] init];
+        runLoop = [[AYRunloop alloc] init];
     }
     return runLoop;
 }
 
 
-@implementation NCRunloop
+@implementation AYRunloop
 
 -(void)run {
     if (self.runing) {
@@ -95,7 +95,7 @@ NCRunloop *runLoop() {
     }
 }
 
-+(NCRunloop*)currentRunloop {
++(AYRunloop*)currentRunloop {
     NSThread *thread = [NSThread currentThread];
     if ([thread isMainThread]) {
         return nil;
